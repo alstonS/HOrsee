@@ -1,4 +1,9 @@
 public class HorseBarn {
+    private Horse[] spaces;
+    public HorseBarn(Horse[] array)
+    {
+        this.spaces = array;
+    }
 
     public int findHorseSpace(String name) {
         for (int i = 0; i < this.spaces.length; i++) {
@@ -21,5 +26,13 @@ public class HorseBarn {
                 }
             }
         }
+    }
+    public  String toString() {
+        String enter = "";
+        for(int i = 0; i < spaces.length; i++)
+        {
+            enter += "[" + spaces[i] + "] ";
+        }
+        return enter;
     }
 }
