@@ -1,26 +1,26 @@
 public class Mustang implements Horse {
 
-private String Weight;
+private int Weight;
 private String Name;
 
-public Mustang(String Weight, String Name)
+public Mustang(int Weight, String Name)
 {
     this.Weight= Weight;
     this.Name= Name;
 }
 public String getName()
 {
-    return name;
+    return Name;
 }
 public int getWeight()
 {
 
-    return weight;
+    return Weight;
 }
 public String toString()
 {
 
-    return name;
+    return Name;
 }
 
 
